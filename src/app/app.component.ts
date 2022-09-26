@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'practice_day1';
+
+  changeTitle(event: Event){
+    this.title = (event.target as HTMLInputElement).value;
+  }
 }
