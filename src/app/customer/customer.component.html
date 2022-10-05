@@ -1,3 +1,9 @@
+<nav class="navbar navbar-dark bg-dark justify-content-end">
+  <span class="navbar-brand mb-0 h1">Welcome {{loginUserFirstName}},</span>
+  <a href="/login" (click)="logout()" routerLink='/login' class="navbar-brand mb-0 h1 underline">
+    <u>Logout</u></a>
+</nav>
+
 <div class="container-fluid pt-3">
   <div class="card" [hidden]="isAddNew">
     <h5 class="card-header">Customer List</h5>
